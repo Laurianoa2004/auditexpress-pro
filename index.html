@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AuditExpress Pro : l'audit qui t'aide à décrocher des clients</title>
+<meta name="description" content="Entre l'adresse du site d'un commerce, reçois un rapport PDF clair, sans jargon, à ton nom et à ton logo. Pour freelances et étudiants web qui démarchent des TPE.">
+<style>
+:root{--bg:#fbfaf7;--ink:#16181d;--muted:#5b6170;--line:#e4e1da;--accent:#d7372f;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{padding:22px 0;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;letter-spacing:-.02em}.logo span{color:var(--accent)}
+.badge{font-size:13px;border:1px solid var(--line);border-radius:99px;padding:4px 12px;color:var(--muted)}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.08;letter-spacing:-.03em;margin:40px 0 18px}
+.lead{font-size:20px;color:var(--muted);max-width:640px}
+.cta{display:inline-block;margin-top:26px;background:var(--ink);color:#fff;padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:600}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;letter-spacing:-.02em;margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card b{display:block;margin-bottom:6px}
+.num{color:var(--accent);font-weight:800;font-size:14px}
+.price{font-size:34px;font-weight:800}.price small{font-size:15px;color:var(--muted);font-weight:500}
+form{display:grid;gap:14px;max-width:560px}
+label{font-weight:600;font-size:15px}
+input[type=email],select{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:15px}
+.check input{margin-top:5px}
+button{background:var(--accent);color:#fff;border:0;border-radius:10px;padding:14px;font:inherit;font-weight:700;cursor:pointer}
+.small{font-size:13px;color:var(--muted)}
+footer{padding:30px 0 50px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">AuditExpress<span>Pro</span></div><div class="badge">En préparation · liste d'attente</div></header>
+
+<h1>Le rapport d'audit qui t'aide à décrocher ton prochain client.</h1>
+<p class="lead">Tu entres l'adresse du site d'un commerce. Tu reçois en quelques minutes un rapport PDF <b>clair, sans jargon, à ton nom et à ton logo</b> : ce qui ne va pas, ce que ça lui coûte, et quoi corriger en premier. Tu l'envoies au gérant… et tu proposes de le faire.</p>
+<a class="cta" href="#liste">Rejoindre la liste d'attente</a>
+
+<section>
+<h2>Pour qui ?</h2>
+<div class="grid">
+<div class="card"><b>Freelances web</b>Tu veux démarcher des TPE avec autre chose qu'un « bonjour, je fais des sites ».</div>
+<div class="card"><b>Étudiants et alternants web</b>Tu cherches tes premiers clients et un argument concret pour ouvrir la discussion.</div>
+<div class="card"><b>Petites agences</b>Tu veux un pré-audit à ton image, prêt en quelques minutes.</div>
+</div>
+</section>
+
+<section>
+<h2>Ce que contient le rapport</h2>
+<div class="grid">
+<div class="card"><span class="num">01</span><b>Visibilité Google</b>Titre, description, balises, présence locale.</div>
+<div class="card"><span class="num">02</span><b>Vitesse et mobile</b>Mesure Google PageSpeed, expliquée en mots simples.</div>
+<div class="card"><span class="num">03</span><b>Clarté et appels à l'action</b>Le visiteur comprend-il quoi faire en 5 secondes ?</div>
+<div class="card"><span class="num">04</span><b>Priorités chiffrées</b>Les corrections, dans l'ordre, avec la marche à suivre.</div>
+</div>
+<p class="small">Le moteur d'audit existe déjà. La version « marque blanche » (ton logo, tes coordonnées) est en cours de préparation : la liste d'attente nous dit si elle vaut la peine d'être finie.</p>
+</section>
+
+<section>
+<h2>Prix prévu</h2>
+<div class="grid">
+<div class="card"><b>Solo</b><div class="price">15 € <small>/ mois</small></div>Rapports en marque blanche pour démarcher, sans engagement.</div>
+<div class="card"><b>Tarif fondateur</b><div class="price">9 € <small>/ mois, à vie</small></div>Réservé aux 30 premiers inscrits qui s'engagent à s'abonner à l'ouverture. Aucun paiement aujourd'hui.</div>
+</div>
+<p class="small">Prix indicatifs, susceptibles d'évoluer avant l'ouverture. Rien n'est facturé pendant la liste d'attente.</p>
+</section>
+
+<section id="liste">
+<h2>Rejoindre la liste d'attente</h2>
+<iframe name="envoi" id="envoi" class="hidden" title="envoi"></iframe>
+<form id="liste" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdJrZCNaNVbx6blDOvceh7ZQhcNKXA-pGHIlq-XVzYKMD7Kew/formResponse" target="envoi">
+<p class="hidden"><label>Ne pas remplir <input id="piege" tabindex="-1" autocomplete="off"></label></p>
+<div><label for="email">Ton email</label><input id="email" type="email" name="entry.726672892" required autocomplete="email"></div>
+<div><label for="profil">Tu es…</label>
+<select id="profil" name="entry.943832540" required>
+<option value="">Choisir</option>
+<option>Freelance web</option>
+<option>Étudiant / alternant web</option>
+<option>Agence</option>
+<option>Gérant de TPE / commerce (je veux auditer mon propre site)</option>
+<option>Autre</option>
+</select></div>
+<div><label for="prospects">Combien de prospects contactes-tu par mois ?</label>
+<select id="prospects" name="entry.923203471">
+<option value="">Je préfère ne pas répondre</option>
+<option>0, je n'ose pas encore</option>
+<option>1 à 5</option>
+<option>6 à 20</option>
+<option>Plus de 20</option>
+</select></div>
+<label class="check"><input type="checkbox" name="entry.2000255324" value="oui"> Je m'engage à m'abonner au tarif fondateur (9 €/mois) dès l'ouverture. Je confirmerai par email. Aucun paiement aujourd'hui.</label>
+<label class="check"><input type="checkbox" name="entry.377354773" value="oui" required> J'accepte d'être contacté par email au sujet d'AuditExpress Pro (ouverture, questions sur mon besoin). Désinscription en un clic.</label>
+<button type="submit">Je m'inscris</button>
+<p class="small">Tes données (email, profil, réponses) servent uniquement à te prévenir de l'ouverture et à mieux comprendre ton besoin. Elles sont enregistrées dans un formulaire Google (Google Forms) et ne sont ni vendues ni partagées, et sont supprimées si le projet s'arrête, ou au plus tard 12 mois après ton inscription. Pour les consulter ou les supprimer : <a href="mailto:laurianoa2004@gmail.com">laurianoa2004@gmail.com</a>.</p>
+</form>
+</section>
+
+<footer>
+AuditExpress Pro, projet en préparation édité par Lauriano A. · Contact : laurianoa2004@gmail.com · Hébergement : GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Formulaire : Google Forms (Google Ireland Ltd).
+</footer>
+</div>
+<script>
+(function(){var f=document.getElementById('liste'),i=document.getElementById('envoi'),envoye=false;
+f.addEventListener('submit',function(e){if(document.getElementById('piege').value){e.preventDefault();return;}envoye=true;f.querySelector('button').disabled=true;f.querySelector('button').textContent='Envoi…';});
+i.addEventListener('load',function(){if(envoye){location.href='merci.html';}});})();
+</script>
+</body>
+</html>
